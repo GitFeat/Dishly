@@ -1,4 +1,4 @@
-# Smiling-radio
+# Dishly
 
 This project use:
 - [Bun](https://bun.com/docs) `Package Manager`
