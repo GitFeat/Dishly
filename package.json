@@ -1,0 +1,30 @@
+{
+	"name": "dishly",
+	"version": "1.0.0",
+	"author": {
+		"name": "Thibault Feat",
+		"email": "thibault@feat-tech.fr",
+		"url": "https://github.com/GitFeat"
+	},
+	"private": true,
+	"workspaces": [
+		"packages/*",
+		"apps/*"
+	],
+	"scripts": {
+		"dev": "bun run --filter \"*\" dev",
+		"build": "bun run --filter \"*\" build",
+		"lint": "bun run --filter \"*\" lint",
+		"format": "bunx --bun @biomejs/biome format --write",
+		"clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules"
+	},
+	"module": "index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.14",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	}
+}

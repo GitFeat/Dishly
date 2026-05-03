@@ -1,0 +1,15 @@
+{
+	"name": "@repo/backend",
+	"private": true,
+	"scripts": {
+		"dev": "bun --watch src/index.ts",
+		"build": "bun build ./src/index.ts --outdir ./dist --target bun --minify",
+		"lint": "bunx --bun @biomejs/biome check --write"
+	},
+	"dependencies": {
+		"@repo/database": "workspace:*",
+		"@repo/shared-types": "workspace:*",
+		"@types/express": "^5.0.6",
+		"express": "^5.2.1"
+	}
+}

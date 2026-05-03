@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+
+# Bun
+bun.lockb
+.bun/
+
+# Build outputs
+dist/
+build/
+.next/
+.turbo/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
