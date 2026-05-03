@@ -13,7 +13,7 @@ This project use:
 │   ├───backend          ===> ExpressJS 
 │   │   └───src
 │   │       └───index.ts ===> Main Entrypoint          
-│   └───frontend         ===> Nuxt
+│   └───frontend         ===> VueJS
 │       └───src
 └───packages
     ├───database         ===> (@repo/database) Prisma
