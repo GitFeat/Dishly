@@ -1,5 +1,9 @@
 {
 	"name": "@repo/shared-types",
 	"private": true,
-	"type": "module"
+	"type": "module",
+	"scripts": {
+		"lint": "bunx --bun @biomejs/biome check --write",
+		"format": "bunx --bun @biomejs/biome format --write ."
+	}
 }

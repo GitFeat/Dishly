@@ -13,10 +13,11 @@
 		"apps/*"
 	],
 	"scripts": {
-		"dev": "bun run --filter \"@repo/backend\" --filter \"@repo/frontend\" dev",
-		"build": "bun run --filter \"*\" build",
-		"lint": "bun run --filter \"*\" lint",
-		"format": "bunx --bun @biomejs/biome format --write"
+		"dev": "turbo dev",
+		"build": "turbo build",
+		"lint": "turbo lint",
+		"format": "turbo format",
+		"clean": "turbo clean"
 	},
 	"module": "index.ts",
 	"type": "module",

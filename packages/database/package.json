@@ -1,4 +1,8 @@
 {
 	"name": "@repo/database",
-	"private": true
+	"private": true,
+	"scripts": {
+		"lint": "bunx --bun @biomejs/biome check --write",
+		"format": "bunx --bun @biomejs/biome format --write ."
+	}
 }
