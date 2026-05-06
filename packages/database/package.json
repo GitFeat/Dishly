@@ -1,8 +1,17 @@
 {
 	"name": "@repo/database",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"lint": "bunx --bun @biomejs/biome check --write",
-		"format": "bunx --bun @biomejs/biome format --write ."
+		"format": "bunx --bun @biomejs/biome format --write .",
+		"db:push": "bunx prisma db push",
+		"db:generate": "bunx prisma generate",
+		"db:studio": "bunx prisma studio",
+		"db:pull": "bunx prisma db pull"
+	},
+	"devDependencies": {
+		"dotenv": "^17.4.2",
+		"prisma": "^7.8.0"
 	}
 }
